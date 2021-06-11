@@ -20,4 +20,4 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### App
-https://gentlemanapp.netlify.app/
+https://gentlemanappppp.netlify.app/
