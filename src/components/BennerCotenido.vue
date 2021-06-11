@@ -58,7 +58,6 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    background-attachment: fixed;
 }
 .navbar .navbar-brand{
     height: 4rem;
