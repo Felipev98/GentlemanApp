@@ -3,7 +3,7 @@
   <b-navbar toggleable="lg" type="dark" variant="info">
       <b-container>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    <b-navbar-brand href="#" class=""> <img src="../assets/logo.png" alt=""></b-navbar-brand>
+    <b-navbar-brand href="#"> <img src="../assets/logo.png" alt=""></b-navbar-brand>
         <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mx-auto">
         <b-nav-item href="#InicioSección" class="navbar">Inicio</b-nav-item>
@@ -17,10 +17,10 @@
 
 <div class="container" id="InicioSección">
     <div class="row ">
-        <div class="col-xl-6 align-items-center " id="banner-imagen" >
+        <div class="col-xl-6  align-items-center " id="banner-imagen" >
             <h2>APRENDE A PROGRAMAR <br>COMO UN <span>GENTLEMAN</span> </h2>
             <p>Unete a una comunidad de programadores de habla <br>hispana y conviertete en un "pro" de la programación</p>
-                <a href="#comunidad1" id="unirme">¡Unirme ya!</a>
+                <a href="#comunidad1" id="unirme">Unirme ya</a>
             
 
         </div>
@@ -154,7 +154,7 @@ color:  white !important;
     }
  #lol img{
      width: 34rem;
-  padding-top: 15vh;
+  padding-top: 10rem;
    
  }
 
@@ -166,7 +166,7 @@ color:  white !important;
 padding-top: 10rem;
 }
 #banner-imagen{
-    padding-top: 12vw;
+    padding-top: 10rem;
 }
 
 }
@@ -219,7 +219,7 @@ justify-content: center;
     padding: 1rem;
 }
 
-@media screen and (min-width:994px){
+@media screen and (min-width:992px){
     #nav-collapse{
         background-color: inherit;
         padding: 1rem;
@@ -231,4 +231,20 @@ justify-content: center;
     }
     
 }
+@media screen and (min-width:800px) and (max-width:1100px){
+.navbar .navbar-brand img{
+width: 8rem;
+}
+.navbar .nav-item a{
+    font-size: 1.2rem;
+}
+#lol img{
+    width: 29rem;
+}
+#unirme{
+    font-size: 2.2rem;
+}
+
+}
+
 </style>

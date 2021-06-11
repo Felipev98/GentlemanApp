@@ -15,11 +15,7 @@
         <b-card-text >
           <h6>{{video.snippet.title}}</h6>
       <p>{{video.snippet.description}}</p>
-    </b-card-text>
-    
-    
-    
-   
+    </b-card-text>   
   <b-modal :id="'myModal'+video.id.videoId" :title="video.snippet.title">
     <div class="iframe-container">
           <iframe width="466" height="400" :src='"https://www.youtube.com/embed/"+video.id.videoId'></iframe>
@@ -46,7 +42,7 @@ export default {
     return {
       videos:null,
       search:'',
-      isotope:null
+      isotope:null,
     }
   },
     components:{
@@ -62,13 +58,13 @@ export default {
             q: this.search,
             maxResults:2,
             type: 'video'
-
           }
             let datos = await axios.get('https://youtube.googleapis.com/youtube/v3/search',{params})
-            this.videos = datos.data.items
-          
+            this.videos = datos.data.items          
         },
-         searchData(){
+
+        
+        searchData(){
         this.getVideos()      
     },
     relayoutTheGrid(){
@@ -82,21 +78,18 @@ export default {
       
     }     
     },
-
     created(){
         this.getVideos()
         this.relayoutTheGrid();
      
     }
 }
-
 </script>
 
 <style> 
 body{
   background-color: #040F20 ;
 }
-
 img{
   align-items: center;
 }
@@ -112,7 +105,6 @@ img{
 }
 .input-text:hover{
   box-shadow: 0px 9px 32px -1px #EA1889;
-
 }
 #input-titulo{
   text-align: center;
@@ -122,13 +114,11 @@ img{
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
 }
-
 .card{
   box-shadow: 0px 9px 32px -1px #EA1889;
   transition: all 0.3s ease-in;
   opacity: 0.5;
 }
-
 .card:hover{
   transform: scale(1.1);
   opacity: 1;
@@ -136,19 +126,15 @@ img{
 ;
 }
 .card-text h6{
-
   font-size: 0.7rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-
 }
-
 .card-text p{
   font-size: 0.6rem;
   font-family:'Lato', sans-serif;
   font-weight: 400;
 }
-
 .boton{
   width: 100%;
   background-color: #EA1889  !important;
@@ -157,7 +143,6 @@ img{
   outline: none;
   font-family:'Poppins', sans-serif ;
   font-weight: 500;
-
 }
 .boton:hover{
   color: #FFA5D5;
@@ -165,7 +150,6 @@ img{
 .modal-footer{
   display: none;
 }
-
 .iframe-container{
   position: relative;
   padding-bottom: 56.25%;
@@ -180,10 +164,8 @@ img{
     width: 100%;
     height: 100%;
 }
-
 /* Media Queries */
 @media screen and (max-width:980px){
-
 .input-container{
   display: flex;
   justify-content: center;
@@ -193,7 +175,6 @@ img{
   
 }
 }
-
 @media screen and (max-width:1024px){
   .card-body h6{
     font-size: 1rem;
@@ -204,8 +185,5 @@ img{
 .card .mx-auto{
   margin-top: 1rem;
 }
-
 }
-
-
 </style>

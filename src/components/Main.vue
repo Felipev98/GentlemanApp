@@ -35,7 +35,7 @@ export default {
 }
 .texto-programador p{
     color: white;
-    font-size: 3.7vh;
+    font-size: 1.6rem;
 }
 .bigote img{
     width: 25rem;
@@ -49,6 +49,7 @@ export default {
     
     color: white;
     font-weight: 700;
+    font-size: 2rem;
 }
 .titulo-seccion span{
     color: #F977BC ;
@@ -73,6 +74,11 @@ export default {
     width: 18rem;
 }
 
+}
+@media screen and (min-width:220px) and ( max-width: 800px){
+    .texto-programador p{
+        font-size: 1.4rem;
+    }
 }
 @media screen and (min-width:1024px) and (max-width:1026px){
 

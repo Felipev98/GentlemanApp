@@ -11,7 +11,7 @@
               <div class="col-xl-6 text-center align-items: center" >
                   <div class="titulo-comunidad">
                 <p>¿No sabes por dónde empezar? <br> ¡Tranquilo! Tenemos una serie de <br> videos que van desde lo básico en <br> programación hasta nivel experto.</p>
-                    <router-link id="boton-youtube" to="/Youtube">¡Empieza a programar!</router-link>
+                    <router-link id="boton-youtube" to="/Youtube">Empieza a programar</router-link>
              
                   </div>
                  
@@ -45,7 +45,7 @@ html{
 
 .titulo-seccion p{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family:'Lato', sans-serif;
     font-weight: 400;
 }
@@ -68,13 +68,16 @@ html{
     min-height: 100vh;
     background-color:#040F20 ;
 }
-
+.boton-contenedor{
+    display: flex;
+    justify-content: flex-start;
+}
 #boton-youtube{
     padding: 0.7rem;
     background-color: #D60073;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 40%;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -86,6 +89,7 @@ html{
     transform: translateX(80%);
     text-decoration: none;
     display: flex;
+    justify-content: center;
     
 }
 #boton-youtube:hover{
@@ -93,9 +97,6 @@ html{
 
 }
 /* Media Queries */
-
-
-
 @media screen and (max-width:1199px){
     .titulo-comunidad{
         text-align: center;
@@ -121,7 +122,14 @@ html{
      
  }
 }
-@media screen and (min-width:1024px) and (max-width:1026px){
+@media screen and (min-width:800px) and (max-width:1023px){
+
+#unirme{
+    font-size: 1.5rem  !important;
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1090px){
 
 
 .youtube img{
@@ -131,7 +139,12 @@ html{
 #boton-youtube{
     font-size: 1.4rem;
 }
-
+#seccion-youtube{
+    min-height: 60vh;
+}
+#unirme{
+    font-size: 1.5rem !important;
+}
 
 }
 @media screen and (max-width:600px) { 

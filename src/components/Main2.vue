@@ -9,7 +9,7 @@
               
               <div class="col-xl-6 text-center align-items: center" >
                   <div class="titulo-comunidad">
-                  <p>Al unirte a nuestra comunidad en <br> discord podrás acceder a distintos <br> contenidos referente a la <br> programación que van desde: <br> Memes hasta cursos <span>gratis.</span> <br>¿Qué esperas para unirte? </p>
+                  <p>Al unirte a nuestra comunidad en <br> discord podrás acceder a distintos <br> contenidos referente a la <br> programación que van desde: <br> Memes hasta cursos <span>gratis</span> <br>¿Qué esperas para unirte? </p>
                   </div>
               </div>
               <div class="col-xl-6 d-flex align-items-center justify-content-center" >
@@ -39,8 +39,8 @@ html{
     
 }
 .titulo-comunidad p{
-    color: white;
-    font-size: 3.5vh;
+    color: #ffffff;
+    font-size: 1.6rem;
     font-family:'Lato', sans-serif;
     font-weight: 400;
 }
@@ -58,6 +58,11 @@ html{
 #seccion-programar{
     min-height: 45vh;
     background-color:#040F20 ;
+}
+@media screen and (min-width:220px) and ( max-width: 800px){
+    .titulo-comunidad p{
+        font-size: 1.4rem;
+    }
 }
 @media screen and (max-width:1199px){
     .titulo-comunidad{
