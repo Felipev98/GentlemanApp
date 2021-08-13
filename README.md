@@ -20,7 +20,6 @@ _Client:_
 
 ## Build Setup 📦
 
-## Project setup
 ```
 npm install
 ```
